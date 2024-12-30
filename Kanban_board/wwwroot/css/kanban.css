@@ -1,0 +1,7 @@
+.label-indicator {
+    display: inline-block;
+    width: 10px; /* Vonal szélessége */
+    height: 10px; /* Vonal magassága */
+    border-radius: 2px; /* Lekerekített sarkok */
+    margin-left: 5px; /* Térköz a címke és a feladat címe között */
+}

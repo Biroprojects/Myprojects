@@ -1,0 +1,568 @@
+﻿@page "{id:int}"
+@using System.Security.Claims
+@model Kanban_board.Pages.Boards.DetailsModel
+
+@{
+    var isAuthenticated = User.Identity.IsAuthenticated;
+    ViewData["Title"] = "Board Details";
+}
+
+<h1>@Model.Board.Title</h1>
+<head>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .floating-buttons {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            z-index: 1000;
+        }
+
+            .floating-buttons .btn {
+                width: 180px;
+                text-align: center;
+                box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+            }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4; /* Szép világos háttér */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Fejléc */
+        header {
+            background-color: #4CAF50; /* Zöld szín */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        /* Kártyák (taskok) megjelenítése */
+        .task-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+            .task-card:hover {
+                transform: translateY(-5px); /* Hover effektus */
+            }
+
+            /* Task kártya fejléc */
+            .task-card .task-header {
+                font-weight: bold;
+                font-size: 1.2em;
+                color: #333;
+                margin-bottom: 10px;
+            }
+
+            /* Task leírás */
+            .task-card .task-description {
+                font-size: 1em;
+                color: #555;
+                line-height: 1.5;
+            }
+
+ 
+
+        .container 
+        {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        }
+ 
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin: 10px 5px;
+            transition: background-color 0.3s ease;
+        }
+
+            button:hover {
+                background-color: #0056b3;
+            }
+
+        .bg-custom {
+            background-color: #e9f5e9; /* Világos zöld */
+        }
+
+        .main-content {
+            margin-top: 20px;
+        }
+
+        /* A task lista doboz */
+        .task-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+            /* Egyedi lista dizájn */
+            .task-list .list-container {
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                width: 30%;
+            }
+
+                .task-list .list-container h3 {
+                    text-align: center;
+                    color: #333;
+                    font-size: 1.5em;
+                    margin-bottom: 20px;
+                }
+
+                .task-list .list-container ul {
+                    list-style-type: none;
+                    padding: 0;
+                }
+
+                    .task-list .list-container ul li {
+                        background-color: #f9f9f9;
+                        margin-bottom: 10px;
+                        padding: 10px;
+                        border-radius: 5px;
+                        transition: background-color 0.3s ease;
+                    }
+
+                        .task-list .list-container ul li:hover {
+                            background-color: #f1f1f1;
+                        }
+        .drag-area {
+            min-height: 50px; /* Növeljük a célterület magasságát */
+            display: block;
+            background-color: #f9f9f9; /* Halvány háttér a jobb láthatóságért */
+        }
+
+            .drag-area.target {
+                background-color: #e6ffe6; /* Halvány zöld kiemelés célterületként */
+                border: 2px dashed #28a745;
+            }
+        .dragging {
+            background-color: #f0f8ff; /* Halvány kék kiemelés */
+            opacity: 0.8;
+            transform: scale(1.05); /* Kissé nagyít */
+            transition: transform 0.2s ease, background-color 0.3s ease;
+        }
+
+        /* Célterület kiemelése */
+        .target {
+            background-color: #e6ffe6; /* Halvány zöld kiemelés */
+            border: 2px dashed #28a745; /* Zöld szaggatott keret */
+            padding: 10px; /* Nagyobb terület, vizuálisan is */
+            transition: background-color 0.3s ease, border 0.3s ease;
+        }
+        .label-indicator {
+            display: inline-block;
+            width: 30px;
+            height: 10px;
+            border-radius: 2px;
+            margin-left: 5px;
+            position: relative; 
+        }
+
+            .label-indicator:hover .tooltip {
+                visibility: visible; /* Tooltip láthatóvá válik, ha az egér fölötte van */
+                opacity: 1;
+            }
+
+        .tooltip {
+            visibility: hidden; /* Alapértelmezés szerint rejtve van */
+            opacity: 0; 
+            background-color: #333; 
+            color: #fff; 
+            text-align: center; 
+            border-radius: 5px; 
+            padding: 5px; 
+            position: absolute; 
+            z-index: 1; 
+            bottom: 100%; 
+            left: 50%; 
+            transform: translateX(-50%);
+            transition: opacity 0.3s; 
+        }
+           
+        td, tr, th {
+            border: 1px solid black;
+            border-collapse: collapse;
+            cursor: all-scroll;
+        }
+        table {
+            border-collapse: collapse;
+            -webkit-user-select: none; 
+            -ms-user-select: none; 
+            user-select: none; 
+            margin: 0 auto;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="board-container d-flex flex-wrap gap-3">
+        @Html.AntiForgeryToken()
+        @foreach (var list in Model.Board.Lists)
+        {
+            <div class="list-container border rounded p-3" style="width: 250px;">
+                <h3 class="list-title text-center">@list.Title</h3>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Tasks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var task in list.Tasks)
+                        {
+                            <tr class="task-row" draggable="true"
+                                ondragstart="start(event, @task.TaskId, @list.ListId, @Model.Board.BoardId)"
+                                ondragover="allowDrop(event)"
+                                ondragenter="onDragEnter(event)"
+                                ondragleave="onDragLeave(event)"
+                                ondrop="drop(event)"
+                                data-list-id="@list.ListId">
+
+                                <td>
+                                    <a href="javascript:void(0);" class="task-title" onclick="showTaskDescription('@task.Description')">
+                                        @task.Title
+                                    </a>
+                                    @if (task.TaskLabel != null)
+                                    {
+                                        <span class="label-indicator badge" style="background-color:@task.TaskLabel.Label.Color;">
+                                            <span class="tooltip">@task.TaskLabel.Label.Name</span>
+                                        </span>
+                                    }
+                                    <div class="label-form-container mt-2">
+                                        <form method="post" asp-page-handler="AddLabel">
+                                            <input type="hidden" name="taskId" value="@task.TaskId" />
+                                            <input type="hidden" name="boardId" value="@Model.Board.BoardId" />
+                                            <select name="labelId" class="form-select form-select-sm" required>
+                                                <option value="">Select a label</option>
+                                                @foreach (var label in Model.AvailableLabels)
+                                                {
+                                                    <option value="@label.LabelId">@label.Name</option>
+                                                }
+                                            </select>
+                                            <button type="submit" class="btn btn-secondary btn-sm mt-2">Add Label</button>
+                                        </form>
+                                    </div>
+
+                                    <div class="task-actions mt-2 d-flex justify-content-center gap-2">
+                                        @if (task.AssignedTo == User.FindFirstValue(ClaimTypes.NameIdentifier) || User.IsInRole("Admin"))
+                                        {
+                                            <a asp-page="/Tasks/EditTask" asp-route-taskId="@task.TaskId" class="btn btn-primary btn-sm">Edit</a>
+                                            <form asp-page-handler="DeleteTask" method="post" style="display:inline;" onsubmit="return confirm('Are you sure you want to delete this task?');">
+                                                <input type="hidden" name="taskId" value="@task.TaskId" />
+                                                <input type="hidden" name="id" value="@Model.Board.BoardId" />
+                                                <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                                            </form>
+                                        }
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                        @if (!list.Tasks.Any())
+                        {
+                            <tr class="empty-row" ondragover="allowDrop(event)" ondrop="drop(event)" data-list-id="@list.ListId" ondragenter="onDragEnter(event)" ondragleave="onDragLeave(event)">
+                                <td class="text-center py-4 bg-light">No tasks available</td>
+                            </tr>
+                        }
+                        @if (isAuthenticated)
+                        {
+                            <tr>
+                                <td class="add-task-form">
+                                    <form method="post" asp-page="/Tasks/AddTask" asp-route-listId="@list.ListId">
+                                        <input type="text" name="Title" placeholder="Task Title" class="form-control mb-2" required />
+                                        <textarea name="Description" placeholder="Task Description" class="form-control mb-2"></textarea>
+                                        <button type="submit" class="btn btn-success w-100">Add Task</button>
+                                    </form>
+                                </td>
+                            </tr>
+                        }
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <tr>
+                                <td class="text-center">
+                                    <form asp-page="/Lists/DeleteList" method="post" onsubmit="return confirmDelete();">
+                                        <input type="hidden" name="listId" value="@list.ListId" />
+                                        <button type="submit" class="btn btn-danger btn-sm">Delete List</button>
+                                    </form>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+        @if (User.IsInRole("Admin"))
+        {
+            <div class="floating-buttons">
+                <form method="post" asp-page-handler="ExportToXml" asp-route-boardid="@Model.Board.BoardId">
+                    <button type="submit" class="btn btn-primary">Export to XML</button>
+                </form>
+            </div>
+        }
+    </div>
+@if (User.IsInRole("Admin"))
+{
+        <div>
+        <a asp-page="/Lists/CreateList" asp-route-boardId="@Model.Board.BoardId" class="btn btn-primary">Add List</a>
+    </div>
+}
+<div id="taskDescriptionContainer" style="margin-top: 20px; padding: 10px; border: 1px solid #ddd; border-radius: 5px; display: none;">
+    <h4>Task Description:</h4>
+    <p id="taskDescription"></p>
+</div>
+
+</body>
+<script>
+    function showTaskDescription(description) {
+        document.getElementById('taskDescription').textContent = description;
+        document.getElementById('taskDescriptionContainer').style.display = 'block';
+    }
+
+    function confirmDelete() {
+        return confirm("Are you sure you want to delete this list?");
+    }
+    let draggedRow;
+
+    function start(event, taskId, listId, boardId) {
+        draggedRow = event.target.closest("tr"); // A húzott sor
+        event.dataTransfer.effectAllowed = "move";
+        event.dataTransfer.setData("text/plain", JSON.stringify({ taskId, listId, boardId }));
+
+        // Kiemelés hozzáadása a húzott sorhoz
+        draggedRow.classList.add("dragging");
+    }
+
+    function allowDrop(event) {
+        event.preventDefault(); // Az áthúzás engedélyezése
+    }
+
+    function onDragEnter(event) {
+        const targetRow = event.target.closest("tr"); // Megkeressük a legközelebbi <tr>-t
+        if (targetRow && targetRow !== draggedRow) {
+            targetRow.classList.add("target"); // Kiemelés a célzott sorra
+        }
+    }
+
+    function onDragOver(event) {
+        event.preventDefault(); // Az áthúzás engedélyezése
+        const targetRow = event.target.closest("tr");
+
+        if (targetRow && targetRow !== draggedRow) {
+            // Ellenőrizzük, hogy a célzott sor elég közel van-e a húzott sorhoz
+            const targetOffset = targetRow.offsetTop;
+            const draggedOffset = draggedRow.offsetTop;
+
+            if (Math.abs(targetOffset - draggedOffset) < 50) { // Állítható a tolerancia (50px)
+                document.querySelectorAll(".target").forEach(el => el.classList.remove("target"));
+                targetRow.classList.add("target");
+            }
+        }
+    }
+
+    function onDragLeave(event) {
+        const targetRow = event.target.closest("tr");
+        if (targetRow) {
+            targetRow.classList.remove("target"); // Kiemelés eltávolítása
+        }
+    }
+
+    function drop(event) {
+        event.preventDefault();
+
+        let targetRow = event.target.closest("tr");
+        if (targetRow && targetRow !== draggedRow) {
+            const parent = targetRow.parentNode;
+
+            // Meghatározzuk, hogy a cél előtt vagy után helyezzük el a húzott sort
+            const beforeDrop = targetRow.offsetTop > draggedRow.offsetTop;
+            if (beforeDrop) {
+                parent.insertBefore(draggedRow, targetRow);
+            } else {
+                parent.insertBefore(draggedRow, targetRow.nextSibling);
+            }
+
+            // Frissítjük az adatokat
+            draggedRow.dataset.listId = targetRow.dataset.listId;
+            const draggedData = JSON.parse(event.dataTransfer.getData("text/plain"));
+            updateTaskList(draggedData.taskId, draggedRow.dataset.listId, draggedData.boardId);
+        }
+
+        // Tisztítás: eltávolítjuk a kiemeléseket
+        clearHighlights();
+
+    }
+
+    function clearHighlights() {
+        document.querySelectorAll(".dragging, .target").forEach(el => el.classList.remove("dragging", "target"));
+    }
+ 
+    function updateTaskList(taskId, newListId, boardId) {
+        setTimeout(() => {
+            fetch(`/Tasks/UpdateTaskList`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "RequestVerificationToken": document.querySelector('input[name="__RequestVerificationToken"]').value
+                },
+                body: JSON.stringify({ taskId: taskId, newListId: newListId, boardId: boardId })
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! Status: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    if (data.success) {
+                        console.log("Task successfully updated.");
+                        if (data.isOldListEmpty) {
+                            console.log("Original list is empty, refreshing page.");
+                            location.reload();
+                        } else {
+                            console.log("Original list still has tasks.");
+                        }
+                        if (data.isNewListEmptyBefore) {
+                            console.log("New list was empty before, refreshing page.");
+                            location.reload();
+                        }
+                    } else {
+                        console.error("Failed to update task.");
+                    }
+                })
+                .catch(error => console.error("Error:", error));
+        }, 50); // 50ms várakozás
+
+    }
+
+</script>
+@if(User.IsInRole("Admin")){
+<canvas id="taskDistributionChart"></canvas>
+<script>
+        const canvas = document.getElementById('taskDistributionChart');
+        canvas.width = 700;  
+        canvas.height = 350; 
+      ctx =canvas.getContext('2d');
+    const taskCounts = @Html.Raw(Newtonsoft
+        .Json
+        .JsonConvert
+        .SerializeObject(Model.UserTaskCounts.Select(x => x.TaskCount)
+        .ToList()));
+    const userNames = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.UserTaskCounts.Select(x => x.UserName).ToList()));
+
+    const chart = new Chart(ctx, {
+        type: 'pie',
+        data: {
+            labels: userNames,
+            datasets: [{
+                label: 'Tasks',
+                data: taskCounts,
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)',
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)',
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: false,
+            plugins: {
+                legend: {
+                    position: 'top',
+                },
+                title: {
+                    display: true,
+                    text: 'Task Distribution'
+                }
+            }
+        }
+    });
+
+</script>
+
+}
+@if(!User.IsInRole("Admin")){
+<canvas id="taskLabelChart" width="400" height="200"></canvas>
+<script>
+    const ctx = document.getElementById('taskLabelChart').getContext('2d');
+
+    // Címke adatok és feladatok számának betöltése
+    const taskCounts = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.UserTaskCounts2.Select(x => x.TaskCount).ToList()));
+ 
+
+    // Lekérdezni a címkék nevét
+    const labelNames = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(Model.AvailableLabels.Select(label => new { label.LabelId, label.Name })));
+
+    const chart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: labelNames.map(label => label.Name), // Címkék nevei
+            datasets: [{
+                label: 'Tasks per Label',
+                data: taskCounts,
+                backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                borderColor: 'rgba(54, 162, 235, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    ticks: {
+                        callback: function (value) {
+                            return Number.isInteger(value) ? value : ''; // Csak az egész számokat jelenítjük meg
+                        }
+                    }
+                }
+            }
+        }
+    });
+</script>
+}

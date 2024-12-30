@@ -1,0 +1,999 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\areas\\identity\\data\\dataseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\areas\\identity\\data\\dataseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\pages\\boards\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\pages\\boards\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\pages\\boards\\adduser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\pages\\boards\\adduser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\pages\\tasks\\addtask.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\pages\\tasks\\addtask.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\pages\\boards\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\pages\\boards\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\pages\\tasks\\edittask.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\pages\\tasks\\edittask.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\pages\\boards\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\pages\\boards\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\pages\\boards\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\pages\\boards\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\pages\\tasks\\updatetasklist.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\pages\\tasks\\updatetasklist.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\pages\\tasks\\updatetasklist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\pages\\tasks\\updatetasklist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\pages\\boards\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\pages\\boards\\details.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\pages\\boards\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\pages\\boards\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\pages\\boards\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\pages\\boards\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\pages\\boards\\adduser.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\pages\\boards\\adduser.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\pages\\boards\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\pages\\boards\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\pages\\boards\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\pages\\boards\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\areas\\identity\\data\\tasklabel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\areas\\identity\\data\\tasklabel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\areas\\identity\\data\\boarduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\areas\\identity\\data\\boarduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\areas\\identity\\data\\board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\areas\\identity\\data\\board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\areas\\identity\\data\\karbantask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\areas\\identity\\data\\karbantask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\areas\\identity\\data\\kanbanuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\areas\\identity\\data\\kanbanuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\areas\\identity\\data\\kanban_boardcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\areas\\identity\\data\\kanban_boardcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\pages\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\pages\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\pages\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\pages\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\areas\\identity\\pages\\account\\resendemailconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\areas\\identity\\pages\\account\\resendemailconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\areas\\identity\\pages\\account\\confirmemail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\areas\\identity\\pages\\account\\confirmemail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\areas\\identity\\pages\\account\\registerconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\areas\\identity\\pages\\account\\registerconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\areas\\identity\\pages\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\areas\\identity\\pages\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\pages\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\pages\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\areas\\identity\\pages\\account\\loginwith2fa.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\areas\\identity\\pages\\account\\loginwith2fa.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\pages\\lists\\deletelist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\pages\\lists\\deletelist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\pages\\lists\\createlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\pages\\lists\\createlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\pages\\tasks\\addtask.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\pages\\tasks\\addtask.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\wwwroot\\css\\kanban.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\wwwroot\\css\\kanban.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\pages\\tasks\\edittask.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\pages\\tasks\\edittask.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\pages\\lists\\deletelist.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\pages\\lists\\deletelist.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\pages\\boards\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\pages\\boards\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\model\\usertaskcount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\model\\usertaskcount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\pages\\lists\\createlist.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\pages\\lists\\createlist.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\areas\\identity\\data\\list.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\areas\\identity\\data\\list.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\model\\usertaskcount2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\model\\usertaskcount2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\areas\\identity\\data\\label.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\areas\\identity\\data\\label.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\model\\taskdistribution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\model\\taskdistribution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Migrations\\20241029101140_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Kanban_board\\Migrations\\20241029101140_InitialMigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\areas\\identity\\pages\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\areas\\identity\\pages\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\areas\\identity\\pages\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\areas\\identity\\pages\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\areas\\identity\\pages\\account\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\areas\\identity\\pages\\account\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|c:\\users\\bence\\source\\repos\\kanban_board\\kanban_board\\migrations\\20241029101333_migraciok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25E4A602-8E96-4F79-9092-879756E6E8C9}|Kanban_board\\Kanban_board.csproj|solutionrelative:kanban_board\\migrations\\20241029101333_migraciok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Boards\\Create.cshtml",
+              "RelativeDocumentMoniker": "Kanban_board\\Pages\\Boards\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Boards\\Create.cshtml",
+              "RelativeToolTip": "Kanban_board\\Pages\\Boards\\Create.cshtml",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-26T08:48:19.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Boards\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Kanban_board\\Pages\\Boards\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Boards\\Edit.cshtml",
+              "RelativeToolTip": "Kanban_board\\Pages\\Boards\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-26T08:48:19.553Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EditTask.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Tasks\\EditTask.cshtml",
+              "RelativeDocumentMoniker": "Kanban_board\\Pages\\Tasks\\EditTask.cshtml",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Tasks\\EditTask.cshtml",
+              "RelativeToolTip": "Kanban_board\\Pages\\Tasks\\EditTask.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-27T16:03:17.378Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AddTask.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Tasks\\AddTask.cshtml",
+              "RelativeDocumentMoniker": "Kanban_board\\Pages\\Tasks\\AddTask.cshtml",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Tasks\\AddTask.cshtml",
+              "RelativeToolTip": "Kanban_board\\Pages\\Tasks\\AddTask.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-27T12:09:14.782Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Boards\\Details.cshtml",
+              "RelativeDocumentMoniker": "Kanban_board\\Pages\\Boards\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Boards\\Details.cshtml",
+              "RelativeToolTip": "Kanban_board\\Pages\\Boards\\Details.cshtml",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAAAHQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-26T08:48:19.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AddUser.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Boards\\AddUser.cshtml",
+              "RelativeDocumentMoniker": "Kanban_board\\Pages\\Boards\\AddUser.cshtml",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Boards\\AddUser.cshtml",
+              "RelativeToolTip": "Kanban_board\\Pages\\Boards\\AddUser.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAYwB8AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-27T20:24:43.451Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DataSeeder.cs",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Areas\\Identity\\Data\\DataSeeder.cs",
+              "RelativeDocumentMoniker": "Kanban_board\\Areas\\Identity\\Data\\DataSeeder.cs",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Areas\\Identity\\Data\\DataSeeder.cs",
+              "RelativeToolTip": "Kanban_board\\Areas\\Identity\\Data\\DataSeeder.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwAkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T09:18:28.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\appsettings.json",
+              "RelativeDocumentMoniker": "Kanban_board\\appsettings.json",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\appsettings.json",
+              "RelativeToolTip": "Kanban_board\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-25T11:16:29.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Boards\\Index.cshtml",
+              "RelativeDocumentMoniker": "Kanban_board\\Pages\\Boards\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Boards\\Index.cshtml",
+              "RelativeToolTip": "Kanban_board\\Pages\\Boards\\Index.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-26T08:48:20.073Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UpdateTaskList.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Tasks\\UpdateTaskList.cshtml.cs",
+              "RelativeDocumentMoniker": "Kanban_board\\Pages\\Tasks\\UpdateTaskList.cshtml.cs",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Tasks\\UpdateTaskList.cshtml.cs",
+              "RelativeToolTip": "Kanban_board\\Pages\\Tasks\\UpdateTaskList.cshtml.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAQwDkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T21:15:09.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UpdateTaskList.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Tasks\\UpdateTaskList.cshtml",
+              "RelativeDocumentMoniker": "Kanban_board\\Pages\\Tasks\\UpdateTaskList.cshtml",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Tasks\\UpdateTaskList.cshtml",
+              "RelativeToolTip": "Kanban_board\\Pages\\Tasks\\UpdateTaskList.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-29T21:15:07.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Delete.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Boards\\Delete.cshtml.cs",
+              "RelativeDocumentMoniker": "Kanban_board\\Pages\\Boards\\Delete.cshtml.cs",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Boards\\Delete.cshtml.cs",
+              "RelativeToolTip": "Kanban_board\\Pages\\Boards\\Delete.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T08:48:19.985Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Boards\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Kanban_board\\Pages\\Boards\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Boards\\Delete.cshtml",
+              "RelativeToolTip": "Kanban_board\\Pages\\Boards\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-26T08:48:19.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Kanban_board\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Kanban_board\\Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-26T08:49:40.388Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Details.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Boards\\Details.cshtml.cs",
+              "RelativeDocumentMoniker": "Kanban_board\\Pages\\Boards\\Details.cshtml.cs",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Boards\\Details.cshtml.cs",
+              "RelativeToolTip": "Kanban_board\\Pages\\Boards\\Details.cshtml.cs",
+              "ViewState": "AgIAANgAAAAAAAAAAAAAAOsAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T08:48:19.816Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AddUser.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Boards\\AddUser.cshtml.cs",
+              "RelativeDocumentMoniker": "Kanban_board\\Pages\\Boards\\AddUser.cshtml.cs",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Boards\\AddUser.cshtml.cs",
+              "RelativeToolTip": "Kanban_board\\Pages\\Boards\\AddUser.cshtml.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwDEAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T20:24:44.929Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Edit.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Boards\\Edit.cshtml.cs",
+              "RelativeDocumentMoniker": "Kanban_board\\Pages\\Boards\\Edit.cshtml.cs",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Boards\\Edit.cshtml.cs",
+              "RelativeToolTip": "Kanban_board\\Pages\\Boards\\Edit.cshtml.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAxwBkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T08:48:19.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Program.cs",
+              "RelativeDocumentMoniker": "Kanban_board\\Program.cs",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Program.cs",
+              "RelativeToolTip": "Kanban_board\\Program.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwBAAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T10:20:19.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Kanban_board\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeToolTip": "Kanban_board\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-26T10:01:00.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "KanbanUser.cs",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Areas\\Identity\\Data\\KanbanUser.cs",
+              "RelativeDocumentMoniker": "Kanban_board\\Areas\\Identity\\Data\\KanbanUser.cs",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Areas\\Identity\\Data\\KanbanUser.cs",
+              "RelativeToolTip": "Kanban_board\\Areas\\Identity\\Data\\KanbanUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T10:35:22.458Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "Kanban_board\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "Kanban_board\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-10-27T10:26:11.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "TaskLabel.cs",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Areas\\Identity\\Data\\TaskLabel.cs",
+              "RelativeDocumentMoniker": "Kanban_board\\Areas\\Identity\\Data\\TaskLabel.cs",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Areas\\Identity\\Data\\TaskLabel.cs",
+              "RelativeToolTip": "Kanban_board\\Areas\\Identity\\Data\\TaskLabel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T10:58:27.118Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "BoardUser.cs",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Areas\\Identity\\Data\\BoardUser.cs",
+              "RelativeDocumentMoniker": "Kanban_board\\Areas\\Identity\\Data\\BoardUser.cs",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Areas\\Identity\\Data\\BoardUser.cs",
+              "RelativeToolTip": "Kanban_board\\Areas\\Identity\\Data\\BoardUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T10:54:07.91Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Create.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Boards\\Create.cshtml.cs",
+              "RelativeDocumentMoniker": "Kanban_board\\Pages\\Boards\\Create.cshtml.cs",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Boards\\Create.cshtml.cs",
+              "RelativeToolTip": "Kanban_board\\Pages\\Boards\\Create.cshtml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwDEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T08:48:19.457Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Board.cs",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Areas\\Identity\\Data\\Board.cs",
+              "RelativeDocumentMoniker": "Kanban_board\\Areas\\Identity\\Data\\Board.cs",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Areas\\Identity\\Data\\Board.cs",
+              "RelativeToolTip": "Kanban_board\\Areas\\Identity\\Data\\Board.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T10:51:29.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "KarbanTask.cs",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Areas\\Identity\\Data\\KarbanTask.cs",
+              "RelativeDocumentMoniker": "Kanban_board\\Areas\\Identity\\Data\\KarbanTask.cs",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Areas\\Identity\\Data\\KarbanTask.cs",
+              "RelativeToolTip": "Kanban_board\\Areas\\Identity\\Data\\KarbanTask.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAwwBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T10:56:41.737Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Kanban_boardContext.cs",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Areas\\Identity\\Data\\Kanban_boardContext.cs",
+              "RelativeDocumentMoniker": "Kanban_board\\Areas\\Identity\\Data\\Kanban_boardContext.cs",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Areas\\Identity\\Data\\Kanban_boardContext.cs",
+              "RelativeToolTip": "Kanban_board\\Areas\\Identity\\Data\\Kanban_boardContext.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAA6wBIAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T10:28:07.119Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Kanban_board\\Pages\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\_ViewImports.cshtml",
+              "RelativeToolTip": "Kanban_board\\Pages\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-25T12:55:57.963Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Kanban_board\\Pages\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\_ViewStart.cshtml",
+              "RelativeToolTip": "Kanban_board\\Pages\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-25T12:56:00.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Error.cshtml",
+              "RelativeDocumentMoniker": "Kanban_board\\Pages\\Error.cshtml",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Error.cshtml",
+              "RelativeToolTip": "Kanban_board\\Pages\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-25T13:00:09.59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Kanban_board\\Pages\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Privacy.cshtml",
+              "RelativeToolTip": "Kanban_board\\Pages\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-25T12:59:22.628Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "Kanban_board\\Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Index.cshtml",
+              "RelativeToolTip": "Kanban_board\\Pages\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-25T12:56:01.157Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "LoginWith2fa.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Areas\\Identity\\Pages\\Account\\LoginWith2fa.cshtml",
+              "RelativeDocumentMoniker": "Kanban_board\\Areas\\Identity\\Pages\\Account\\LoginWith2fa.cshtml",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Areas\\Identity\\Pages\\Account\\LoginWith2fa.cshtml",
+              "RelativeToolTip": "Kanban_board\\Areas\\Identity\\Pages\\Account\\LoginWith2fa.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-30T11:10:29.162Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "ForgotPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
+              "RelativeDocumentMoniker": "Kanban_board\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
+              "RelativeToolTip": "Kanban_board\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-30T11:30:34.32Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "RegisterConfirmation.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml",
+              "RelativeDocumentMoniker": "Kanban_board\\Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml",
+              "RelativeToolTip": "Kanban_board\\Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-30T11:30:55.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ConfirmEmail.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Areas\\Identity\\Pages\\Account\\ConfirmEmail.cshtml",
+              "RelativeDocumentMoniker": "Kanban_board\\Areas\\Identity\\Pages\\Account\\ConfirmEmail.cshtml",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Areas\\Identity\\Pages\\Account\\ConfirmEmail.cshtml",
+              "RelativeToolTip": "Kanban_board\\Areas\\Identity\\Pages\\Account\\ConfirmEmail.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-30T11:31:06.245Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ResendEmailConfirmation.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Areas\\Identity\\Pages\\Account\\ResendEmailConfirmation.cshtml",
+              "RelativeDocumentMoniker": "Kanban_board\\Areas\\Identity\\Pages\\Account\\ResendEmailConfirmation.cshtml",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Areas\\Identity\\Pages\\Account\\ResendEmailConfirmation.cshtml",
+              "RelativeToolTip": "Kanban_board\\Areas\\Identity\\Pages\\Account\\ResendEmailConfirmation.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-30T11:31:17.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Kanban_board\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "Kanban_board\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-26T10:22:57.382Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "Kanban_board\\Pages\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "Kanban_board\\Pages\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-30T11:11:43.733Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "DeleteList.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Lists\\DeleteList.cshtml",
+              "RelativeDocumentMoniker": "Kanban_board\\Pages\\Lists\\DeleteList.cshtml",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Lists\\DeleteList.cshtml",
+              "RelativeToolTip": "Kanban_board\\Pages\\Lists\\DeleteList.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-27T10:58:38.304Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "CreateList.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Lists\\CreateList.cshtml",
+              "RelativeDocumentMoniker": "Kanban_board\\Pages\\Lists\\CreateList.cshtml",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Lists\\CreateList.cshtml",
+              "RelativeToolTip": "Kanban_board\\Pages\\Lists\\CreateList.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-27T09:56:51.329Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "AddTask.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Tasks\\AddTask.cshtml.cs",
+              "RelativeDocumentMoniker": "Kanban_board\\Pages\\Tasks\\AddTask.cshtml.cs",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Tasks\\AddTask.cshtml.cs",
+              "RelativeToolTip": "Kanban_board\\Pages\\Tasks\\AddTask.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFkAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T12:09:18.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "kanban.css",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\wwwroot\\css\\kanban.css",
+              "RelativeDocumentMoniker": "Kanban_board\\wwwroot\\css\\kanban.css",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\wwwroot\\css\\kanban.css",
+              "RelativeToolTip": "Kanban_board\\wwwroot\\css\\kanban.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-10-27T10:26:42.248Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "EditTask.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Tasks\\EditTask.cshtml.cs",
+              "RelativeDocumentMoniker": "Kanban_board\\Pages\\Tasks\\EditTask.cshtml.cs",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Tasks\\EditTask.cshtml.cs",
+              "RelativeToolTip": "Kanban_board\\Pages\\Tasks\\EditTask.cshtml.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAgwDYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T16:05:46.059Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "DeleteList.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Lists\\DeleteList.cshtml.cs",
+              "RelativeDocumentMoniker": "Kanban_board\\Pages\\Lists\\DeleteList.cshtml.cs",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Lists\\DeleteList.cshtml.cs",
+              "RelativeToolTip": "Kanban_board\\Pages\\Lists\\DeleteList.cshtml.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAkwDcAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T10:58:58.246Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Boards\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Kanban_board\\Pages\\Boards\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Boards\\Index.cshtml.cs",
+              "RelativeToolTip": "Kanban_board\\Pages\\Boards\\Index.cshtml.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwCcAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T08:48:20.152Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "UserTaskCount.cs",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\model\\UserTaskCount.cs",
+              "RelativeDocumentMoniker": "Kanban_board\\model\\UserTaskCount.cs",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\model\\UserTaskCount.cs",
+              "RelativeToolTip": "Kanban_board\\model\\UserTaskCount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T13:10:45.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "List.cs",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Areas\\Identity\\Data\\List.cs",
+              "RelativeDocumentMoniker": "Kanban_board\\Areas\\Identity\\Data\\List.cs",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Areas\\Identity\\Data\\List.cs",
+              "RelativeToolTip": "Kanban_board\\Areas\\Identity\\Data\\List.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T10:54:48.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "CreateList.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Lists\\CreateList.cshtml.cs",
+              "RelativeDocumentMoniker": "Kanban_board\\Pages\\Lists\\CreateList.cshtml.cs",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Pages\\Lists\\CreateList.cshtml.cs",
+              "RelativeToolTip": "Kanban_board\\Pages\\Lists\\CreateList.cshtml.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwCwAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-27T09:56:54.463Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "UserTaskCount2.cs",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\model\\UserTaskCount2.cs",
+              "RelativeDocumentMoniker": "Kanban_board\\model\\UserTaskCount2.cs",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\model\\UserTaskCount2.cs",
+              "RelativeToolTip": "Kanban_board\\model\\UserTaskCount2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T15:12:41.232Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "Label.cs",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Areas\\Identity\\Data\\Label.cs",
+              "RelativeDocumentMoniker": "Kanban_board\\Areas\\Identity\\Data\\Label.cs",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Areas\\Identity\\Data\\Label.cs",
+              "RelativeToolTip": "Kanban_board\\Areas\\Identity\\Data\\Label.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T10:58:02.441Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "TaskDistribution.cs",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\model\\TaskDistribution.cs",
+              "RelativeDocumentMoniker": "Kanban_board\\model\\TaskDistribution.cs",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\model\\TaskDistribution.cs",
+              "RelativeToolTip": "Kanban_board\\model\\TaskDistribution.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T12:44:02.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "ScaffoldingReadMe.txt",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\ScaffoldingReadMe.txt",
+              "RelativeDocumentMoniker": "Kanban_board\\ScaffoldingReadMe.txt",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\ScaffoldingReadMe.txt",
+              "RelativeToolTip": "Kanban_board\\ScaffoldingReadMe.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-10-25T10:27:55.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "20241029101140_InitialMigration.cs",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Migrations\\20241029101140_InitialMigration.cs",
+              "RelativeDocumentMoniker": "Kanban_board\\Migrations\\20241029101140_InitialMigration.cs",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Migrations\\20241029101140_InitialMigration.cs",
+              "RelativeToolTip": "Kanban_board\\Migrations\\20241029101140_InitialMigration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T10:11:40.949Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "20241029101333_Migraciok.cs",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Migrations\\20241029101333_Migraciok.cs",
+              "RelativeDocumentMoniker": "Kanban_board\\Migrations\\20241029101333_Migraciok.cs",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Migrations\\20241029101333_Migraciok.cs",
+              "RelativeToolTip": "Kanban_board\\Migrations\\20241029101333_Migraciok.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T10:13:33.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "AccessDenied.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml",
+              "RelativeDocumentMoniker": "Kanban_board\\Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml",
+              "RelativeToolTip": "Kanban_board\\Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-28T19:58:12.232Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "Logout.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
+              "RelativeDocumentMoniker": "Kanban_board\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
+              "RelativeToolTip": "Kanban_board\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAiwCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T10:22:36.218Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "Logout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+              "RelativeDocumentMoniker": "Kanban_board\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+              "RelativeToolTip": "Kanban_board\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-26T10:22:33.357Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "Kanban_board\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeToolTip": "Kanban_board\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAA1wB0AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T10:23:00.259Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "Kanban_board\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeToolTip": "Kanban_board\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAIBJwHMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-26T10:01:20.385Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Kanban_board\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Bence\\source\\repos\\Kanban_board\\Kanban_board\\appsettings.Development.json",
+              "RelativeToolTip": "Kanban_board\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-25T10:19:16.237Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

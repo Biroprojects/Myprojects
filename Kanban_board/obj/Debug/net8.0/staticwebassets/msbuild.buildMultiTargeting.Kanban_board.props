@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Kanban_board.props" />
+</Project>

@@ -1,0 +1,39 @@
+﻿@page "{taskId:int}"
+@model Kanban_board.Pages.Tasks.EditTaskModel
+
+@{
+    ViewData["Title"] = "Edit Task";
+}
+<style>
+ header {
+            background-color: #4CAF50; /* Zöld szín */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+    body {
+        background-color: #e9f5e9; /* Pasztell menta */
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+        </style>
+<h1>Edit Task</h1>
+
+<form method="post">
+    <input type="hidden" asp-for="Task.TaskId" />
+    <div class="form-group">
+        <label asp-for="Task.Title">Title</label>
+        <input asp-for="Task.Title" class="form-control" />
+        <span asp-validation-for="Task.Title" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Task.Description">Description</label>
+        <textarea asp-for="Task.Description" class="form-control"></textarea>
+        <span asp-validation-for="Task.Description" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+    <a asp-page="/Boards/Details" asp-route-id="@Model.Task.List.BoardId" class="btn btn-secondary">Cancel</a>
+</form>

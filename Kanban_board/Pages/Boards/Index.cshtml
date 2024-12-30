@@ -1,0 +1,168 @@
+﻿@page
+@model Kanban_board.Pages.Boards.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+    var isAuthenticated = User.Identity.IsAuthenticated;
+    var isAdmin = User.IsInRole("Admin");
+}
+    <style>
+    header {
+        background-color: #4CAF50; /* Zöld szín */
+        color: white;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+    }
+        body {
+            background-color: #e9f5e9; /* Pasztell menta */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #2e4d4e; /* Sötétzöld árnyalat */
+            text-align: center;
+            margin-top: 20px;
+            font-size: 2rem;
+        }
+
+        .table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .table thead tr {
+            background-color: #d0f0d0; /* Világosabb menta */
+            color: #2e4d4e; /* Sötétzöld */
+        }
+
+        .table th, .table td {
+            padding: 10px 15px;
+            text-align: left;
+            border-bottom: 1px solid #d0d0d0;
+        }
+
+        .table tbody tr:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+
+        .table tbody tr:hover {
+            background-color: #d9f9d9; /* Halvány menta */
+        }
+
+        .btn {
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.875rem;
+            margin-right: 5px;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .btn-primary {
+            background-color: #2e4d4e;
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            background-color: #1b3a4b;
+        }
+
+        .btn-danger {
+            background-color: #e63946;
+            color: #fff;
+        }
+
+        .btn-danger:hover {
+            background-color: #d62839;
+        }
+
+        .btn-secondary {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .btn-secondary:hover {
+            background-color: #0056b3;
+        }
+
+        .btn-outline-secondary {
+            background: none;
+            border: 2px solid #2e4d4e;
+            color: #2e4d4e;
+        }
+
+        .btn-outline-secondary:hover {
+            background: #2e4d4e;
+            color: #fff;
+        }
+
+        p a {
+            color: #2e4d4e;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        p a:hover {
+            text-decoration: underline;
+        }
+
+        form {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="~/css/site.css" />
+<h1>Kanban Boards</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.Boards[0].Title)</th>
+            <th>@Html.DisplayNameFor(model => model.Boards[0].CreatedDate)</th>
+            <th>@Html.DisplayNameFor(model => model.Boards[0].CreatedBy)</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Boards)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.Title)</td>
+                <td>@item.CreatedDate.ToString("yyyy-MM-dd")</td>
+                <td>@Html.DisplayFor(modelItem => item.CreatedBy)</td>
+                <td>
+                    @if (isAuthenticated && isAdmin)
+                    {
+                        <a class="btn btn-primary btn-sm" asp-page="./Edit" asp-route-id="@item.BoardId">Edit</a>
+                        <a class="btn btn-danger btn-sm" asp-page="./Delete" asp-route-id="@item.BoardId">Delete</a>
+                        <a class="btn btn-info btn-sm" asp-page="./AddUser" asp-route-boardId="@item.BoardId">Add User</a>
+                    }
+
+                    @if (isAuthenticated && Model.UserBoardIds.Contains(item.BoardId) || isAuthenticated && isAdmin)
+                    {
+                        <a class="btn btn-secondary btn-sm" asp-page="./Details" asp-route-id="@item.BoardId">Details</a>
+                    }
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>
+@if (isAuthenticated)
+{
+    <form asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/Account/Login", new { area = "Identity" })" method="post">
+        <button type="submit" class="btn btn-outline-secondary">Logout</button>
+    </form>
+}

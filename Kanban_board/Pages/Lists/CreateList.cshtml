@@ -1,0 +1,20 @@
+﻿@page "{boardId:int}"
+@model Kanban_board.Pages.Lists.CreateListModel
+
+@{
+    ViewData["Title"] = "Add List to Board";
+}
+
+<h1>Add List to @Model.Board.Title</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="List.Title">Title</label>
+        <input asp-for="List.Title" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="List.Position">Position</label>
+        <input asp-for="List.Position" type="number" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Add List</button>
+</form>

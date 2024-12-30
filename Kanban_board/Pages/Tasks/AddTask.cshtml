@@ -1,0 +1,62 @@
+﻿@page
+@using System.Security.Claims
+@model Kanban_board.Pages.Tasks.AddTaskModel
+
+@{
+    ViewData["Title"] = "Add Task";
+    var isAuthenticated = User.Identity.IsAuthenticated;
+}
+<style>
+    header {
+        background-color: #4CAF50; /* Zöld szín */
+        color: white;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    body {
+        background-color: #e9f5e9; /* Pasztell menta */
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+</style>
+<h1>Add Task</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Task.Title"></label>
+        <input asp-for="Task.Title" class="form-control" />
+        <span asp-validation-for="Task.Title" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Task.Description"></label>
+        <textarea asp-for="Task.Description" class="form-control"></textarea>
+        <span asp-validation-for="Task.Description" class="text-danger"></span>
+    </div>
+
+    <input type="hidden" asp-for="ListId" />
+    <input type="hidden" asp-for="BoardId" />
+
+    <input type="hidden" name="Task.CreatedBy" value="@User.FindFirstValue(ClaimTypes.NameIdentifier)" />
+
+    @if (User.IsInRole("Admin")) // Csak admin felhasználóknak
+    {
+        <select name="AssignedTo">
+            <option value="">-- Válassz egy felhasználót --</option>
+            @foreach (var email in Model.UserEmails)
+            {
+                <option value="@email">@email</option>
+            }
+        </select>
+    }
+    else
+    {
+        <input type="hidden" name="Task.AssignedTo" value="@User.FindFirstValue(ClaimTypes.NameIdentifier)" />
+    }
+
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
+
+<a asp-page="/Boards/Details" asp-route-id="@Model.BoardId" class="btn btn-secondary">Back to List</a>
