@@ -70,3 +70,5 @@ Jelszó: Minda1
 
 Köszönöm ha kipróbáltad a projektemet!:)
 
+Bármiféle kérdés esetén a következő emailen elérhető vagyok:
+brokers0927@gmail.com
