@@ -1,5 +1,4 @@
-Kanban board alkalmazás
-Ez a projekt egy Kanban board alkalmazás, amely tartalmazza a drag and drop funkciót, és lokálisan fut. Az adatbázis kezeléséhez XAMPP-ot használtam, amelyben az Apache és a MySQL szolgáltatások futnak. Az alkalmazás Visual Studio-ban készült ASP.NET Core Web App(Razor Pagesben), és az Entity Framework Code-First megközelítést használtam az adatbázis létrehozásához.
+Ez a projekt egy Kanban board alkalmazás, amely tartalmazza a drag and drop funkciót, és lokális adatbázisból fut. Az adatbázis kezeléséhez XAMPP-ot használtam, amelyben az Apache és a MySQL szolgáltatások futnak. Az alkalmazás Visual Studio-ban készült ASP.NET Core Web App(Razor Pagesben), és az Entity Framework Code-First megközelítést használtam az adatbázis létrehozásához.
 
 Fő funkciók: 
 -Felhasználók regisztrációja és belépése
