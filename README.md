@@ -12,7 +12,7 @@ Fő funkciók:
 
 Telepítési Útmutató
 1. XAMPP telepítése és beállítása
-Töltsd le a XAMPP telepítőt. link: https://www.apachefriends.org/hu/download.html ezt kell bemásolni az URL be
+Töltsd le a XAMPP telepítőt. link: https://www.apachefriends.org/hu/download.html
 Telepítés: Telepítsd rendszergazdaként a következő lépésekkel: Next → Next → Finish.
 Szolgáltatások elindítása:
 Indítsd el az Apache és a MySQL szolgáltatásokat a XAMPP vezérlőpulton.
